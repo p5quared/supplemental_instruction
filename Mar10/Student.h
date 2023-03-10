@@ -34,7 +34,6 @@ private:
     std::string _firstName;
     std::string _major;
     int* _age;
-    int* _array = new int[10];
     float _gpa;
     int _id;
     int _graudation_year;

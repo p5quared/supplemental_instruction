@@ -43,5 +43,4 @@ void Student::printStudent() {
 Student::~Student() {
     std::cout << "Student destructor called on " << _firstName << std::endl;
     delete _age;
-    delete[] _array;
 }

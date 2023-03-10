@@ -35,6 +35,10 @@ void School::setStudent(Student student, int index) {
     _students[index] = student;
 }
 
+void School::setTwodArray(int* twodArray) {
+    _twodArray = twodArray;
+}
+
 void School::printSchool() {
     std::cout << "School Name: " << _name << std::endl;
     std::cout << "Number of Students: " << _number_of_students << std::endl;
@@ -44,4 +48,12 @@ void School::printSchool() {
         _students[i].printStudent();
         std::cout << std::endl;
     }
+}
+
+void School::printTwodArray() {
+    for (int j = 0; j < 2; j++)
+    {
+        std::cout << _twodArray[j] << " ";
+    }
+    std::cout << std::endl;
 }

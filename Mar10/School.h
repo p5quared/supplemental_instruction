@@ -7,6 +7,7 @@
 
 #include "Student.h"
 
+static const Student _STUDENTS = Student();
 
 class School {
     public:
@@ -18,13 +19,18 @@ class School {
     void setName(std::string name);
     void setNumberOfStudents(int numberOfStudents);
     void setStudent(Student student, int index);
+    void setTwodArray(int* twodArray);
 
     void printSchool();
+    // one-d array
+    void printTwodArray();
+    int* _twodArray;
 
     private:
     std::string _name;
     int _number_of_students;
     Student _students[4];
+
 };
 
 

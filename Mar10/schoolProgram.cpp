@@ -18,8 +18,34 @@ int main(){
     Student students[4] = {student1, student2, student3, student4};
 
     School school1("BMCC", 4, students);
+    School school2("BMCC", 4, students);
 
-    school1.printSchool();
+    int* oneD_array = new int[2];
+    oneD_array[0] = 1;
+    oneD_array[1] = 2;
+    // int oneD_array[2] = {1, 2};
+
+    school1.setTwodArray(oneD_array);
+    school2.setTwodArray(oneD_array);
+
+
+
+    std::cout <<"Before change\n";
+    std::cout << "School 1\n";
+    school1.printTwodArray();
+
+    std::cout << "School 2\n";
+    school2.printTwodArray();
+
+    school1._twodArray[0] = 3;
+    std::cout << "After change\n";
+
+    std::cout << "School 1\n";
+    school1.printTwodArray();
+
+    std::cout << "School 2\n";
+    school2.printTwodArray();
+
 
 
     return 0;
