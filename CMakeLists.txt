@@ -3,4 +3,4 @@ project(supplemental_instruction)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(supplemental_instruction May12/main.cpp)
+add_executable(supplemental_instruction May13/polymorphism.cpp)
